@@ -1,10 +1,21 @@
+using System.ComponentModel.DataAnnotations;
 
-public class Event
+namespace ProjectYandexPracticum.Models
 {
-  public int Id { get; private set; }
-  public string Title { get; private set; }
-  public string Description { get; private set; }
-  public DateTime StartAt { get; private set; }
-  public DateTime EndAt { get; private set; }
+  public class Event
+  {
+    public int Id { get; set; }
+    
+    [Required(ErrorMessage = "Заголовок обязателен для заполнения.")]
+    public string Title { get; set; }
 
+    [Required(ErrorMessage = "Описание обязательно для заполненеия.")]
+    public string Description { get; set; }
+
+    [Required(ErrorMessage = "Дата начала обязательна.")]
+    public DateTime StartAt { get; set; }
+
+    [Required(ErrorMessage = "Дата окончания обязательна.")]
+    public DateTime EndAt { get; set; }
+  }
 }
