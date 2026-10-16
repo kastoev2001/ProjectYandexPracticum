@@ -1,4 +1,4 @@
-using ProjectYandexPracticum.Interfaces;
+п»їusing ProjectYandexPracticum.Interfaces;
 using ProjectYandexPracticum.Models;
 using System;
 using System.Collections.Generic;
@@ -16,8 +16,8 @@ namespace ProjectYandexPracticum.Date
       _events.Add(new Event
       {
         Id = 1,
-        Title = "Поход к врачу",
-        Description = "Плановый осмотр у терапевта.",
+        Title = "РџРѕС…РѕРґ Рє РІСЂР°С‡Сѓ",
+        Description = "РџР»Р°РЅРѕРІС‹Р№ РѕСЃРјРѕС‚СЂ Сѓ С‚РµСЂР°РїРµРІС‚Р°.",
         StartAt = new DateTime(2026, 11, 10, 10, 0, 0),
         EndAt = new DateTime(2026, 11, 10, 11, 0, 0)
       });
@@ -25,8 +25,8 @@ namespace ProjectYandexPracticum.Date
       _events.Add(new Event
       {
         Id = 2,
-        Title = "Встреча с друзьями",
-        Description = "Посидеть в кафе и пообщаться.",
+        Title = "Р’СЃС‚СЂРµС‡Р° СЃ РґСЂСѓР·СЊСЏРјРё",
+        Description = "РџРѕСЃРёРґРµС‚СЊ РІ РєР°С„Рµ Рё РїРѕРѕР±С‰Р°С‚СЊСЃСЏ.",
         StartAt = new DateTime(2026, 11, 12, 18, 0, 0),
         EndAt = new DateTime(2026, 11, 12, 21, 0, 0)
       });
@@ -34,8 +34,8 @@ namespace ProjectYandexPracticum.Date
       _events.Add(new Event
       {
         Id = 3,
-        Title = "Тренировка",
-        Description = "Сходить в спортзал.",
+        Title = "РўСЂРµРЅРёСЂРѕРІРєР°",
+        Description = "РЎС…РѕРґРёС‚СЊ РІ СЃРїРѕСЂС‚Р·Р°Р».",
         StartAt = new DateTime(2026, 11, 15, 17, 0, 0),
         EndAt = new DateTime(2026, 11, 15, 19, 0, 0)
       });
@@ -43,8 +43,8 @@ namespace ProjectYandexPracticum.Date
       _events.Add(new Event
       {
         Id = 4,
-        Title = "День рождения",
-        Description = "Отметить день рождения друга.",
+        Title = "Р”РµРЅСЊ СЂРѕР¶РґРµРЅРёСЏ",
+        Description = "РћС‚РјРµС‚РёС‚СЊ РґРµРЅСЊ СЂРѕР¶РґРµРЅРёСЏ РґСЂСѓРіР°.",
         StartAt = new DateTime(2026, 11, 20, 16, 0, 0),
         EndAt = new DateTime(2026, 11, 20, 22, 0, 0)
       });

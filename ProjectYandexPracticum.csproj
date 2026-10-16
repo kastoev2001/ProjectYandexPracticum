@@ -8,9 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Modules\" />
     <Folder Include="Interfaces\" />
-    <Folder Include="Date\" />
   </ItemGroup>
 
   <ItemGroup>
