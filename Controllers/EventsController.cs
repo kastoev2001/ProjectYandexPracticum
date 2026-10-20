@@ -98,9 +98,17 @@ namespace ProjectYandexPracticum.Controllers
     [ProducesResponseType(StatusCodes.Status200OK)]
     public IActionResult Delete(int id)
     {
+      Event? existedEvent = _eventService.GetEvent(id);
+      bool isExistedEvent = existedEvent != null;
+
+      if (!isExistedEvent)
+      {
+        return BadRequest();
+      }
+
       _eventService.DeleteEvent(id);
 
-      return Ok();
+      return NoContent();
     }
 
     /// <summary>
@@ -119,7 +127,7 @@ namespace ProjectYandexPracticum.Controllers
       {
         _eventService.CreateEvent(newEvent);
 
-        return Created();
+        return CreatedAtAction(nameof(GetById), new { id = newEvent.Id }, newEvent);
       }
       catch (ArgumentException ex)
       {
