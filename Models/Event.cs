@@ -9,8 +9,7 @@ namespace ProjectYandexPracticum.Models
     [Required(ErrorMessage = "Заголовок обязателен для заполнения.")]
     public string Title { get; set; }
 
-    [Required(ErrorMessage = "Описание обязательно для заполненеия.")]
-    public string Description { get; set; }
+    public string? Description { get; set; }
 
     [Required(ErrorMessage = "Дата начала обязательна.")]
     public DateTime? StartAt { get; set; }
