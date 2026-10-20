@@ -13,9 +13,9 @@ namespace ProjectYandexPracticum.Models
     public string Description { get; set; }
 
     [Required(ErrorMessage = "Дата начала обязательна.")]
-    public DateTime StartAt { get; set; }
+    public DateTime? StartAt { get; set; }
 
     [Required(ErrorMessage = "Дата окончания обязательна.")]
-    public DateTime EndAt { get; set; }
+    public DateTime? EndAt { get; set; }
   }
 }
