@@ -9,7 +9,7 @@ public interface IEventService
     public void CreateEvent(Event evet);
     public List<Event> GetAllEvents();
     public void DeleteEvent(int id);
-    public void UpdateEvent(Event evet);
+    public void UpdateEvent(int id);
     public void ValidateEvent(Event newEvent);
   }
 }

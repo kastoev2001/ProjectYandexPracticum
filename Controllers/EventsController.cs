@@ -75,7 +75,7 @@ namespace ProjectYandexPracticum.Controllers
 
       try
       {
-        _eventService.UpdateEvent(updateEvent);
+        _eventService.UpdateEvent(id);
 
         return NoContent();
       } catch(ArgumentException ex)

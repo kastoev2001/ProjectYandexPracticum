@@ -28,10 +28,12 @@ namespace ProjectYandexPracticum.Services
       _eventRepository.Delete(id);
     }
 
-    public void UpdateEvent(Event evet)
+    public void UpdateEvent(int id)
     {
-      ValidateEvent(evet);
-      _eventRepository.Update(evet);
+      Event exitedEvent = GetEvent(id);
+
+      ValidateEvent(exitedEvent);
+      _eventRepository.Update(exitedEvent);
     }
 
     public void CreateEvent(Event newEvent)
